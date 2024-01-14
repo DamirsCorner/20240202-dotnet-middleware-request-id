@@ -1,0 +1,17 @@
+@WebApiRequestIdMiddleware_HostAddress = https://localhost:7110
+
+GET {{WebApiRequestIdMiddleware_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{WebApiRequestIdMiddleware_HostAddress}}/weatherforecast/
+X-Request-ID: 6ea2440f-e981-4474-8a67-bd547a47807f
+Accept: application/json
+
+###
+
+GET {{WebApiRequestIdMiddleware_HostAddress}}/weatherforecast/throw/
+Accept: application/json
+
+###
